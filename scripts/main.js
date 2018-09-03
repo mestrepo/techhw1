@@ -167,9 +167,9 @@ ACTION: element size change
  */
 
 //1. html body element resize counter
+var winResizeCOunter =0;
 function countWindowResize() {
-    var x = 0;
-    var txt = (x += 1);
+    var txt = (winResizeCOunter += 1);
     document.getElementById("windowresizecount").innerHTML = txt;
 
 }
