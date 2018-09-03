@@ -1,0 +1,23 @@
+/*highlight moused nav element*/
+.normal {
+    background-color: #e0e0e0;
+}
+
+.hovered {
+    background-color: yellow;
+}
+
+/*Scroll Event CSS*/
+nav {
+    width: 100%;
+    background-color: gray;
+    text-align: left;
+    margin: 0 auto;
+}
+
+/* applied after scroll height reached */
+.fixed-nav nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}

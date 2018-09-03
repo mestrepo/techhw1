@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MEST EIT Tech HW#1</title>
+	<link href="styles/styles.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+<body id="body" onresize="countWindowResize(); windowColorChangeOnResize();">
+	<header id="home" onclick="changeHomeText()">
+		<h1 id="hometext">Click me child of God !</h1>
+	</header>
+	<nav id="navbar" class="staticnav navigation">
+        <a href="#home" name="homenav">Home</a>
+		<a href="#about" name="aboutnav">About</a>
+		<a href="#projects" name="projectsnav">Projects</a>
+		<a href="#pictures" name="picturesnav">Pictures</a>
+        <a href="#usersection" name="usernav">User</a>
+        <a id="showScroll"></a>
+        <button id='resetButton'>reload page</button>
+        <button type="button" onclick="changeBackgroundToRed()">red background</button>
+        <button type="button" onclick="changeBackgroundToWhite()">white background</button>
+	</nav>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+    <ul id="about">
+        <h2>About</h2>
+        <li><a href="https://linkedin.com/in/todun">My LinkedIn Profile</a></li>
+        <li><a href="https://todunosun.com">My website</a></li>
+    </ul>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <ol id="projects">
+		<h2>Projects</h2>
+        <button type="button" onclick="changeTextColorToGreen()">green text</button>
+        <button type="button" onclick="changeTextColorToBlack()">black text</button>
+		<li>MEST team formation</li>
+		<li>BBB</li>
+		<li><em>Business assignment #2</em></li>
+        <li>tech assignment #1</li>
+	</ol>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+
+    <div id="pictures">
+        <h2 >Pictures</h2>
+        <h4>Double click <em>pegasus</em> image</h4>
+        <h4>Mouse over <em>europa</em> image</h4>
+	    <img id='pegasus' src="images/51pegasib-small.jpg" alt='pegasus' ondblclick="changeImageOnDoubleClick()">
+        <img id='europa' src="images/europa-small.jpg" alt='pegasus' onmouseover="changeImageOnMouseOver()">
+    </div>
+    <div id="usersection">
+        <h2>User Section</h2>
+        <input type="text" id="userinput" placeholder="enter email..." oninput="showUserInput()" onblur="toUpperCase()">
+        <p id="showuserinput"></p>
+        <p id="tranformeduserinput"></p>
+        <select id="eitclasses" onchange="showSelectedElement()">
+            <option value="default">
+            <option value="business">Business
+            <option value="comm">Communication
+            <option value="tech">Tech
+        </select>
+        <p id="userselection"></p>
+        <p>Window re-sized <span id="windowresizecount">0</span> times.</p>
+    </div>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<!-- put javascript script tag at end of body block -->
+	<script src="scripts/main.js" type="text/javascript"></script>
+</body>
+</html>
